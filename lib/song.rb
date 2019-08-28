@@ -27,7 +27,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres.group_by
+    result = @@genres.each_with_object(Hash.new(0)) { |genre,counts| counts[genre] += 1 }
   end
   
   def self.artist_count
