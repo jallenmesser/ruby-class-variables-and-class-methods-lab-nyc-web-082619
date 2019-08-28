@@ -17,7 +17,7 @@ class Song
   end
   
   def genre
-    
+    @@genre.uniq
   end
   
 end
